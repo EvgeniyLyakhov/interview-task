@@ -1,10 +1,10 @@
-import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Button, Toolbar } from "@mui/material";
 import { Link, Outlet } from "react-router-dom";
 
 const navItems = [
   { title: "Home", link: "/" },
-  { title: "List", link: "/list" },
-  { title: "Single", link: "/single" },
+  { title: "Profile", link: "/profile" },
+  { title: "Details", link: "/details" },
 ];
 
 export function Layout() {

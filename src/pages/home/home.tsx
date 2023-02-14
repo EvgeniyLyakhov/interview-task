@@ -6,9 +6,6 @@ export function Home() {
     <div>
       <Header>Home page</Header>
       <Typography>List of cards here</Typography>
-      <Typography>
-        line 1:title, line 2: image, line 3: desctiption, line 4: owner
-      </Typography>
     </div>
   );
 }
