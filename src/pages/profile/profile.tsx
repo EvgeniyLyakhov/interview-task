@@ -1,11 +1,13 @@
-import { Typography } from "@mui/material";
-import { Header } from "../../blocks/header/header";
+import { Header } from "../../layouts/header/header";
+import { useProfile } from "./use-profile.hook";
 
 export function Profile() {
+  const { cards } = useProfile();
+  if (cards.length === 0)
+    return <Header>No cards for specified Profile</Header>;
   return (
     <div>
-      <Header>Profile</Header>
-      <Typography>List of cards here</Typography>
+      <Header>Profile cards</Header>
     </div>
   );
 }

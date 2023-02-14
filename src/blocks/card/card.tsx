@@ -1,3 +1,3 @@
-export function Card(props: any) {
+export function Card(props: unknown) {
   return <div>something should be here</div>;
 }

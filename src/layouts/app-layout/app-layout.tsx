@@ -1,23 +1,17 @@
 import { AppBar, Box, Button, Toolbar } from "@mui/material";
 import { Link, Outlet } from "react-router-dom";
 
-const navItems = [
-  { title: "Home", link: "/" },
-  { title: "Profile", link: "/profile" },
-  { title: "Details", link: "/details" },
-];
+const navItems = [{ title: "Home", link: "/" }];
 
 export function Layout() {
   return (
     <div>
       <AppBar component='nav'>
         <Toolbar>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <Box>
             {navItems.map((item) => (
               <Link to={item.link} key={item.link}>
-                <Button sx={{ color: "#fff" }} href={item.link}>
-                  {item.title}
-                </Button>
+                <Button sx={{ color: "#fff" }}>{item.title}</Button>
               </Link>
             ))}
           </Box>

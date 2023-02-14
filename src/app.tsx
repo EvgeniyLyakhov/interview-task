@@ -1,13 +1,8 @@
-import {
-  createBrowserRouter,
-  Route,
-  RouterProvider,
-  Routes,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Layout } from "./layouts/app-layout/app-layout";
+import { CardDetails } from "./pages/card-details/card-details";
 import { Home } from "./pages/home/home";
 import { Profile } from "./pages/profile/profile";
-import { Details } from "./pages/details/details";
 
 const router = createBrowserRouter([
   {
@@ -15,8 +10,8 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "/", element: <Home /> },
-      { path: "/list", element: <Profile /> },
-      { path: "/single", element: <Details /> },
+      { path: "/profile/:id", element: <Profile /> },
+      { path: "/cards/:id", element: <CardDetails /> },
     ],
   },
 ]);

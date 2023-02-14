@@ -1,29 +1,33 @@
-Create a `Card` component. Card component should be used on the following pages: `Home page`, `Profile page`, `Details page`.
+# Front-end interview task
 
-For each page there are specific requirements to Card:
+## Requirements
 
-- Home page:
+Create a `Card`component that will be used on three different pages: `Home`, `Profile`, and `Details`.
 
-  - should show list of cards(grid)
-  - each card has the following information:
-    - line 1: title(link to details)
-    - line 2: owner(link to profile)
-    - line 3: image
-    - line 4: button that shows modal
+Each page has specific requirements for the `Card` component.
 
-- Profile page
+### Home page
 
-  - should show list of cards(grid)
-  - each card has the following information:
-    - line 1: title(link to details) + status
-    - line 2: image
-    - line 3: button that shows modal
+- Page should present list of cards.
+- Each card should contain the following information:
+  - Line 1: A title that links to the details page.
+  - Line 2: The owner of the card that links to the owner's profile.
+  - Line 3: An image.
+  - Line 4: A button that shows a modal.
 
-- Details page
+### Profile page
 
-  - should show single card
-  - card has the following information:
-    - line 1: title
-    - line 2: status
-    - line 3: image
-    - line 4: owner(link to profile)
+- Page should present list of cards.
+- Each card should contain the following information:
+  - Line 1: A title that links to the details page and the status of the card.
+  - Line 2: An image.
+  - Line 3: A button that shows a modal.
+
+### Details page
+
+- Page should present single of card.
+- The card should contain the following information:
+  - Line 1: The title of the card.
+  - Line 2: The status of the card.
+  - Line 3: An image.
+  - Line 4: The owner of the card that links to the owner's profile.
