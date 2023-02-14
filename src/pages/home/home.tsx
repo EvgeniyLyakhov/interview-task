@@ -1,5 +1,4 @@
 import { Header } from "../../layouts/header/header";
-import "./home.css";
 import { useHome } from "./use-home.hook";
 
 export function Home() {
