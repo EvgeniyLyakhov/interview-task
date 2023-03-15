@@ -25,7 +25,7 @@ Each page has specific requirements for the `Card` component.
 
 ### Details page
 
-- Page should present single of card.
+- Page should present single card.
 - The card should contain the following information:
   - Line 1: The title of the card.
   - Line 2: The status of the card.
